@@ -24,6 +24,10 @@ namespace Business.Concrete
             {
                 _carDal.Add(car);
             }
+            else
+            {
+                Console.WriteLine("Ürün Eklenemedi! Araç adı 2 karakterden kısa ya da ürün fiyatı 0 dan büyük değil.");
+            }
         }
 
         public void Delete(Car car)
